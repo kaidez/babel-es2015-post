@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "server": "./node_modules/httpster/bin/httpster -p 3000 -d ./build/",
-    "build-js": "browserify js-build/*.js --o build/js/scripts.js -t [ babelify --presets [ es2015 ] ]",
+    "build-js": "browserify js-build/*.js --o build/scripts.js -t [ babelify --presets [ es2015 ] ]",
     "build": "npm run build-js",
     "watch-js": "nodemon -e js -w js-build -x 'npm run build-js'",
     "watch": "npm run server & npm run watch-js"
