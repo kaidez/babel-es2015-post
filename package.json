@@ -8,8 +8,6 @@
     "watch-js": "nodemon -e js -w js-build -x 'npm run build-js'",
     "watch": "npm run server & npm run watch-js"
   },
-  "author": "",
-  "license": "ISC",
   "browserify": {
     "transform": [
       "babelify"
