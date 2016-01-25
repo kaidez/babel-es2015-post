@@ -4,12 +4,12 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var nameBuilder = exports.nameBuilder = function nameBuilder(getEl) {
+var getName = exports.getName = function getName(getEl) {
   var fName = arguments.length <= 1 || arguments[1] === undefined ? "Kai" : arguments[1];
   var lName = arguments.length <= 2 || arguments[2] === undefined ? "Gittens" : arguments[2];
 
-  var getName = "Hello " + fName + " " + lName;
-  getEl.html(getName);
+  var fullName = "Hello " + fName + " " + lName;
+  getEl.html(fullName);
 };
 
 },{}],2:[function(require,module,exports){
@@ -27,7 +27,7 @@ function _interopRequireDefault(obj) {
 
 var TARGET_EL = (0, _jquery2.default)("#targetEl");
 
-(0, _functions.nameBuilder)(TARGET_EL);
+(0, _functions.getName)(TARGET_EL);
 
 },{"./functions":1,"jquery":3}],3:[function(require,module,exports){
 /*!
