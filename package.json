@@ -6,6 +6,11 @@
     "server": "./node_modules/httpster/bin/httpster -p 3000 -d ./build/",
     "watch": "npm run server & npm run watch-js"
   },
+
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/kaidez/babel-es2015-post"
+  },
   "browserify": {
     "transform": [
       "babelify"
