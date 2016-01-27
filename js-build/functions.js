@@ -1,4 +1,4 @@
-export let getName = ( getEl, fName="Kai", lName="Gittens" ) => {
-  let fullName =  `Hello ${fName} ${lName}`;
+export let getName = ( getEl, firstName="Kai", lastName="Gittens" ) => {
+  let fullName =  `Hello ${firstName} ${lastName}`;
   getEl.html( fullName );
 }

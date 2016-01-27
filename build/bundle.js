@@ -5,10 +5,10 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var getName = exports.getName = function getName(getEl) {
-  var fName = arguments.length <= 1 || arguments[1] === undefined ? "Kai" : arguments[1];
-  var lName = arguments.length <= 2 || arguments[2] === undefined ? "Gittens" : arguments[2];
+  var firstName = arguments.length <= 1 || arguments[1] === undefined ? "Kai" : arguments[1];
+  var lastName = arguments.length <= 2 || arguments[2] === undefined ? "Gittens" : arguments[2];
 
-  var fullName = "Hello " + fName + " " + lName;
+  var fullName = "Hello " + firstName + " " + lastName;
   getEl.html(fullName);
 };
 
